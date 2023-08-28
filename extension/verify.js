@@ -42,6 +42,10 @@ if (window.location.hostname.indexOf("canva") > -1){
         $("._23f99zyGZtlDWreJ5dNkE").remove();
     });
     window.setInterval(function(){ 
+	$('button>span:contains("Send to teacher")').parent().remove();
+        $('li>button[type="button"][aria-label="Send to teacher"]').remove();
+        $('button[type="button"][aria-label="Help"]').remove();
+        $('a[href="/design-reviews"]').remove();
         $('[aria-label="Switch to another team"]').remove();
         $('[aria-describedby="rbd-hidden-text-0-hidden-text-0"]').remove();
         $('.EVWsgA').remove();
